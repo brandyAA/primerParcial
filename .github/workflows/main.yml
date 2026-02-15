@@ -19,4 +19,4 @@ jobs:
       - name: Instalar Surge y Publicar
         run: |
           npm install -g surge
-          surge ./ primer-parcial.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+          surge ./ primer-parcialbrandy.surge.sh --token ${{ secrets.SURGE_TOKEN }}
