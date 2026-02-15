@@ -1,0 +1,18 @@
+name: Notificación ntfy.sh
+
+# El evento que dispara la acción
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar alerta a ntfy.sh
+        run: |
+          curl -d "¡Despliegue exitoso! El repositorio de Rosdevdr se ha actualizado en la rama main." \
+               -H "Title: GitHub Alert" \
+               -H "Priority: high" \
+               -H "Tags: rocket,computer" \
+               ntfy.sh/devops-itla12
