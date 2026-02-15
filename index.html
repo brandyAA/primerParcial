@@ -1,10 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mini Tienda</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rutina Gym - Brandy Fitness</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #111);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+    background: linear-gradient(90deg, #00f5a0, #00d9f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1f1f2e;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0, 255, 170, 0.4);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #00f5a0;
+}
+
+.card ul {
+    padding-left: 18px;
+}
+
+button {
+    background: linear-gradient(90deg, #00f5a0, #00d9f5);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    opacity: 0.7;
+}
+</style>
 </head>
+
 <body>
-    <h1>Bienvenido a mi Mini Tienda 🚀</h1>
-    <p>Proyecto con CI/CD usando GitHub Actions y Surge.sh</p>
+
+<header>
+    <h1>💪 Rutina Semanal Gym</h1>
+    <p>Disciplina + Constancia = Resultados 🔥</p>
+</header>
+
+<div class="container">
+    <div class="cards">
+
+        <div class="card">
+            <h3>🏋️ Lunes - Pecho</h3>
+            <ul>
+                <li>Press banca - 4x12</li>
+                <li>Press inclinado - 3x12</li>
+                <li>Aperturas - 3x15</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>💪 Martes - Espalda</h3>
+            <ul>
+                <li>Dominadas - 4x10</li>
+                <li>Remo con barra - 3x12</li>
+                <li>Jalón al pecho - 3x12</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🦵 Miércoles - Piernas</h3>
+            <ul>
+                <li>Sentadilla - 4x10</li>
+                <li>Prensa - 3x12</li>
+                <li>Extensiones - 3x15</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🔥 Jueves - Hombros</h3>
+            <ul>
+                <li>Press militar - 4x10</li>
+                <li>Elevaciones laterales - 3x15</li>
+                <li>Encogimientos - 3x15</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>💥 Viernes - Brazos</h3>
+            <ul>
+                <li>Barra bíceps - 4x12</li>
+                <li>Tríceps polea - 3x15</li>
+                <li>Fondos - 3x12</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <center>
+        <button onclick="motivacion()">Motívame 🔥</button>
+    </center>
+</div>
+
+<footer>
+    © 2026 Brandy Fitness | Proyecto DevOps 🚀
+</footer>
+
+<script>
+function motivacion() {
+    alert("¡No pares hasta que estés orgulloso! 💪🔥");
+}
+</script>
+
 </body>
 </html>
